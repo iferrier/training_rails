@@ -1,0 +1,6 @@
+<h1>This is the list of all the surfboards:</h1>
+<% @surfboards.each do |surfboard| %>
+<ul>
+  <li><%= surfboard.name %> (<%= surfboard.price %>€/day)</li>
+</ul>
+<% end %>
