@@ -1,0 +1,7 @@
+<h3><%= @client.name %> made these bookings</h3>
+
+<% @boardbookings.each do |booking| %>
+  <ul>
+    <li> <%= booking.start_date %> </li>
+  </ul>
+<% end %>

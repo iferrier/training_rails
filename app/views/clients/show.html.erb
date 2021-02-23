@@ -2,6 +2,11 @@
 <p>Address: <%= @client.address %></p>
 <p>Tel: <%= @client.tel %></p>
 
+<div> <%= link_to 'See all bookings', client_boardbookings_path(@client) %> </div>
+<div> <%= render 'boardbookings/new', client: @client %> </div>
+<div> <%= render 'boardbookings/index', client: @client %> </div>
+
+<br>
 <div>
   <%= link_to 'back to all clients', clients_path %>
 </div>

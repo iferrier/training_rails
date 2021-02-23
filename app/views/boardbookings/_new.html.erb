@@ -1,0 +1,7 @@
+<h3>Add a booking</h3>
+<%= simple_form_for [@client, @boardbooking] do |f|  %>
+  <%= f.association :surfboard, value_method: :id  %>
+  <%= f.input :start_date %>
+  <%= f.input :booking_length %>
+  <%= f.submit 'Book now!' %>
+<% end %>

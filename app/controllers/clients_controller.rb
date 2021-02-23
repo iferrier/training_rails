@@ -25,6 +25,8 @@ class ClientsController < ApplicationController
 
   def show
     @client = Client.find(params[:id])
+    @boardbooking = Boardbooking.new
+    @boardbookings = @client.boardbookings
   end
 
   def destroy
