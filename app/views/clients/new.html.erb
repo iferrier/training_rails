@@ -1,0 +1,8 @@
+<h1>Add a client here</h1>
+
+<%= simple_form_for(@client) do |f|%>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :tel %>
+  <%= f.submit 'Add now' %>
+<% end %>

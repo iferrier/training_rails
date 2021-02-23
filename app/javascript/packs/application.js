@@ -7,5 +7,13 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import "channels"
 
+import { initMapbox } from "./init_mapbox";
+import { initAutocomplete } from "./init_autocomplete";
+
 Rails.start()
 Turbolinks.start()
+
+document.addEventListener('turbolinks:load', () => {
+  initMapbox();
+  initAutocomplete();
+})
